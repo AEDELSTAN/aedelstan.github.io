@@ -160,7 +160,7 @@ export default defineConfig({
     rehypePlugins: pipeline(),
     syntaxHighlight: 'prism'
   },
-  integrations: [sitemap()],
+//integrations: [sitemap()],
   output: "server",
   adapter: vercel()
 });
