@@ -5,8 +5,8 @@ pubDate: 2024-04-06
 description: '这里记录我使用Astro的前后与方法'
 author: 'Kaemon'
 cover:
-    url: 'https://jsd.cdn.zzko.cn/gh/AEDELSTAN/picx-images-hosting@master/Pictures/Cover/IMG_20240210_174544.3d4ki5gvha.webp?resize=1&w=1920'
-    square: 'https://jsd.cdn.zzko.cn/gh/AEDELSTAN/picx-images-hosting@master/Pictures/Cover/IMG_20240210_174544.3d4ki5gvha.webp?resize=1&w=1920'
+    url: 'https://jsd.cdn.zzko.cn/gh/AEDELSTAN/picx-images-hosting@master/Pictures/Cover/IMG_20240210_174544.3d4ki5gvha.webp'
+    square: 'https://jsd.cdn.zzko.cn/gh/AEDELSTAN/picx-images-hosting@master/Pictures/Cover/IMG_20240210_174544.3d4ki5gvha.webp'
     alt: 'cover'
 tags: ["代码", "Astro"] 
 theme: 'light'
@@ -22,4 +22,10 @@ featured: true
 从Hexo转到Astro体验到最大的改善，即是它的SSR功能，让开发预览更方便一些，我也在逐步深入了解Astro，希望在博客中能记录一些自己的学习与思考。 
 
 **博文将会持续更新！**
+
+我的其他博客？
+
+> [Hexo](https://aedelstan.github.io/hexo-kevin-blog/) - 分享日常
+
+> [Gmeek](https://aedelstan.github.io/starrail-blog) - 一些游戏攻略
 
