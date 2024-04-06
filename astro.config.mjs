@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config';
 import { visit } from 'unist-util-visit';
 import md5 from 'md5';
-import sitemap from '@astrojs/sitemap';
+//import sitemap from '@astrojs/sitemap';
 import { SITE_URL } from './src/consts';
 
 // Rebuild HTML tree.
