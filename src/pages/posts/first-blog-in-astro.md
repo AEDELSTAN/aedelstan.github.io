@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/MarkdownPost.astro'
 title: '在Astro的第一篇博文'
-pubDate: 2024-04-06
+pubDate: 2024-04-05
 description: '这里记录我使用Astro的前后与方法'
 author: 'Kaemon'
 cover:
