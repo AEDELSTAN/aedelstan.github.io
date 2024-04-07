@@ -14,14 +14,6 @@ featured: false
 
 ---
 
-
-# **简介**
-
-> Markdown 是一种轻量级标记语言  
-> Markdown 语言在 2004 由约翰·格鲁伯[John Gruber]创建  
-> Markdown 编写的文档可以导出 HTML 、Word、图像、PDF、Epub 等格式    
-> Markdown 编写的文档后缀为`.md`/`.markdown`  
-
 ## 快速跳转
 
 [#标题](#使用号标记标题)&emsp;
