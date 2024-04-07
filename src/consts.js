@@ -1,8 +1,8 @@
 export const SITE_TITLE = `生存战略！`;
-export const SITE_DESCRIPTION = 'Site Description';
+export const SITE_DESCRIPTION = 'Kaemon 生存战略！';
 export const SITE_EMAIL = '1070575521@qq.com'
-export const SITE_NAME = 'astro.yufengbiji.com';
-export const SITE_URL = "https://astro.yufengbiji.com";
+export const SITE_NAME = 'aedelstan.github.io';
+export const SITE_URL = "https://aedelstan.github.io";
 export const SITE_LANG = "zh-CN";
 
 // Author, used only when author is not specified on the page, 
