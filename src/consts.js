@@ -1,5 +1,5 @@
-export const SITE_TITLE = `生存战略！`;
-export const SITE_DESCRIPTION = 'Kaemon 生存战略！';
+export const SITE_TITLE = `生存戦略！`;
+export const SITE_DESCRIPTION = 'Kaemon 生存戦略！';
 export const SITE_EMAIL = '1070575521@qq.com'
 export const SITE_NAME = 'aedelstan.github.io';
 export const SITE_URL = "https://aedelstan.github.io";
