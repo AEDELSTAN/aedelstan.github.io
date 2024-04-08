@@ -3,7 +3,10 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Tile from "../layouts/Tile.astro";
 import MoreTile from "../layouts/MoreTile.astro";
 const allPosts = await Astro.glob("../pages/posts/*.md");
-allPosts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate));
+allPosts.sort(
+  (a, b) =>
+    Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate)
+);
 ---
 
 <BaseLayout>
@@ -15,7 +18,14 @@ allPosts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontma
           // tile-hero
           allPosts.slice(0, 1).map((post) => {
             return (
-              <Tile title={post.frontmatter.title} href={post.url} date={post.frontmatter.pubDate} tags={post.frontmatter.tags} cover={post.frontmatter.cover.url} level="1" />
+              <Tile
+                title={post.frontmatter.title}
+                href={post.url}
+                date={post.frontmatter.pubDate}
+                tags={post.frontmatter.tags}
+                cover={post.frontmatter.cover.url}
+                level="1"
+              />
             );
           })
         }
@@ -24,7 +34,14 @@ allPosts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontma
           // tile-2up
           allPosts.slice(1, 5).map((post) => {
             return (
-              <Tile title={post.frontmatter.title} href={post.url} date={post.frontmatter.pubDate} tags={post.frontmatter.tags} cover={post.frontmatter.cover.url} level="2" />
+              <Tile
+                title={post.frontmatter.title}
+                href={post.url}
+                date={post.frontmatter.pubDate}
+                tags={post.frontmatter.tags}
+                cover={post.frontmatter.cover.url}
+                level="2"
+              />
             );
           })
         }
@@ -33,7 +50,14 @@ allPosts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontma
           // tile-3up
           allPosts.slice(5, 11).map((post) => {
             return (
-              <Tile title={post.frontmatter.title} href={post.url} date={post.frontmatter.pubDate} tags={post.frontmatter.tags} cover={post.frontmatter.cover.url} level="3" />
+              <Tile
+                title={post.frontmatter.title}
+                href={post.url}
+                date={post.frontmatter.pubDate}
+                tags={post.frontmatter.tags}
+                cover={post.frontmatter.cover.url}
+                level="3"
+              />
             );
           })
         }
@@ -44,21 +68,30 @@ allPosts.sort((a, b) => Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontma
   <section class="more-from-newsroom">
     <div class="section-content">
       <h2 class="section-head">更多文章</h2>
-   
 
       <ul role="list" class="section-tiles">
-
         {
           // tile-2up
           allPosts.slice(5, 11).map((post) => {
             return (
-              <MoreTile title={post.frontmatter.title} href={post.url} date={post.frontmatter.pubDate} tags={post.frontmatter.tags} cover={post.frontmatter.cover.url} />
+              <MoreTile
+                title={post.frontmatter.title}
+                href={post.url}
+                date={post.frontmatter.pubDate}
+                tags={post.frontmatter.tags}
+                cover={post.frontmatter.cover.url}
+              />
             );
           })
         }
       </ul>
       <div class="view-archive-wrapper">
-        <a href="/archive" class="cta-primary-light" data-analytics-region="router" data-analytics-title="view archive">阅读历史文章</a>
+        <a
+          href="/archive"
+          class="cta-primary-light"
+          data-analytics-region="router"
+          data-analytics-title="view archive">阅读历史文章</a
+        >
       </div>
     </div>
   </section>

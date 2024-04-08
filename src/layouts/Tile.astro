@@ -1,6 +1,6 @@
 ---
 import { formatDate } from "../utils";
-const { title, href, cover, tags, date, level} = Astro.props;
+const { title, href, cover, tags, date, level } = Astro.props;
 
 const dateFormated = formatDate(date);
 const type = tags[0];
@@ -12,16 +12,34 @@ const label = `${title} - ${type} - 发表时间 ${dateFormated}`;
 
 <li
   role="listitem"
-  class:list={["tile-item", "nr-scroll-animation", { "item-hero": level === "1", "item-2up": level === "2", "item-3up": level === "3" }]}
+  class:list={[
+    "tile-item",
+    "nr-scroll-animation",
+    {
+      "item-hero": level === "1",
+      "item-2up": level === "2",
+      "item-3up": level === "3",
+    },
+  ]}
   style="--nr-animation-transform-y:20%;"
 >
   <a
     href={href}
-    class:list={["tile", "large-load", "medium-load", "small-load", { "tile-hero": level === "1", "tile-2up": level === "2", "tile-3up": level === "3" }]}
+    class:list={[
+      "tile",
+      "large-load",
+      "medium-load",
+      "small-load",
+      {
+        "tile-hero": level === "1",
+        "tile-2up": level === "2",
+        "tile-3up": level === "3",
+      },
+    ]}
     aria-label={label}
   >
     <div class="tile__media" aria-hidden="true">
-      <img class="cover image" data-src={cover} alt="lt"/>
+      <img class="cover image" data-src={cover} alt="lt" />
     </div>
 
     <div class="tile__description" aria-hidden="true">
@@ -29,7 +47,9 @@ const label = `${title} - ${type} - 发表时间 ${dateFormated}`;
         <div class="tile__category">{type}</div>
         <div class="tile__headline">{title}</div>
       </div>
-      <div class="tile__timestamp icon-hide icon icon-before icon-clock">{dateFormated}</div>
+      <div class="tile__timestamp icon-hide icon icon-before icon-clock">
+        {dateFormated}
+      </div>
     </div>
   </a>
 </li>
