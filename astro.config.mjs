@@ -166,7 +166,7 @@ function pipeline() {
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://aedelstan.github.io/',
+  site: SITE_URL,
   markdown: {
     rehypePlugins: pipeline(),
     syntaxHighlight: 'prism',
